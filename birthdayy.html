@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Baby ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#ffe6f0, #fff);
+      overflow: hidden;
+    }
+    .page {
+      display: none;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    .active {
+      display: block;
+    }
+    h1 {
+      color: #ff4d88;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.7;
+      max-width: 650px;
+      margin: auto;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background: #ff4d88;
+      color: white;
+      cursor: pointer;
+    }
+    .heart {
+      font-size: 30px;
+      margin-top: 20px;
+      animation: pulse 1.2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>🎉 Happy Birthday, Baby 🎂</h1>
+  <p>
+    Today is special because YOU were born 🤍<br>
+    And I’m so grateful that you exist.
+  </p>
+  <div class="heart">❤️</div>
+  <button onclick="nextPage(1)">Open Your Surprise 💌</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h1>Just For You 🤍</h1>
+  <p>
+    Baby, I wish I could be there with you today,
+    but distance can never stop what I feel for you.<br><br>
+
+    You make me feel safe, understood, and cared for.
+    Talking to you feels calm, comforting, and real.
+    You accept me the way I am,
+    and that means everything to me.<br><br>
+
+    I’m really thankful to have you in my life.
+  </p>
+  <button onclick="nextPage(2)">Next 💖</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h1>Things I Love About You 🌷</h1>
+  <p>
+    I love the way you listen to me.<br>
+    I love the way your eyes look at me.<br>
+    I love the way you smile at me.<br>
+    I love the devil most.<br
+
+    
+ 
+    I love your patience with my moods.<br>
+    I love how you respect my feelings.<br>
+    I love how you make me feel secure.<br>
+    I love how you care, even in small things.<br><br>
+
+    Most of all, I love how you are YOU.
+  </p>
+  <div class="heart">💞</div>
+  <button onclick="nextPage(3)">Next ✨</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h1>If I Was With You Today 🎂</h1>
+  <p>
+    If I was with you today,
+    I’d wake you up first thing in the morning.<br><br>
+
+    I’d smile looking at you,
+    cut the cake with you,
+    click silly pictures,
+    make you blush with lots of kisses,
+    plans the date night,
+    wear the sexiest dress when there is only me and you,
+    mark any things with the hickeys which only belongs to me,
+    and hug you a little longer than needed.<br><br>
+
+    Until then, imagine me right beside you 🤍
+  </p>
+  <button onclick="nextPage(4)">Next 🌙</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <h1>My Promise to You 🔐</h1>
+  <p>
+    I promise to respect you.<br>
+    I promise to make the horny everytime.<br>
+    I promise to make your life joyfull with love and care.<br>
+    I promise to be honest with you.<br>
+    I promise to support you always.<br>
+    I promise to make devil stand for when he see me;).<br>
+    I promise to grow with you, not away from you.<br><br>
+
+    No matter what,
+    I’ll always care for you deeply.
+  </p>
+  <div class="heart">❤️</div>
+  <button onclick="nextPage(5)">Next 🧸</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+  <h1>Hey Birthday Boy 😄</h1>
+  <p>
+    Now stop smiling so much 😅<br>
+    Or maybe don’t…<br><br>
+
+    Because your smile makes my heart happy,
+    and today you deserve to smile ALL DAY 🤍
+  </p>
+  <button onclick="nextPage(6)">One Last Page 💫</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+  <h1>Always Yours 🌍</h1>
+  <p>
+    Happy Birthday once again, my baby 🤍<br><br>
+
+    Thank you for being in my life.
+    Thank you for choosing me.
+    Thank you for being you.<br><br>
+
+    This little card is just a glimpse
+    of everything I feel for you.
+  </p>
+  <div class="heart">❤️</div>
+  <p><strong>— Avni</strong></p>
+</div>
+
+<script>
+  function nextPage(num) {
+    document.getElementById("page" + num).classList.remove("active");
+    document.getElementById("page" + (num + 1)).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
